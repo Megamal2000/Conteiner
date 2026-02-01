@@ -1,0 +1,29 @@
+  IF (NEW.ID IS NULL) THEN
+      NEW.ID = GEN_ID(TB_USUARIOS_ID_GEN, 1);
+
+create domain cep varchar(9);
+create domain dia timestamp;
+create domain dinheiro decimal(9,2);
+create domain doc varchar(14);
+create domain ender varchar(50);
+create domain estado char(2);
+create domain identifica integer;
+create domain nome varchar(40);
+create domain statusg smallint;
+
+
+
+create generator gen_caixa;
+create generator gen_cliender;
+create generator gen_cliente;
+create generator gen_clitel;
+create generator gen_cores;
+create generator gen_funcender;
+create generator gen_funcs;
+create generator gen_functel;
+create generator gen_modelos;
+create generator gen_usuarios;
+create generator gen_valores;
+create generator gen_veiculo;
+create generator gen_vendaitens;
+create generator gen_vendatopo;

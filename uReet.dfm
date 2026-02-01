@@ -1,0 +1,160 @@
+object Reet: TReet
+  Left = 333
+  Top = 126
+  Width = 337
+  Height = 206
+  BorderIcons = [biSystemMenu]
+  Caption = 'Reentrega'
+  Color = clTeal
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label4: TLabel
+    Left = 24
+    Top = 112
+    Width = 238
+    Height = 13
+    Caption = 'Deseja criar uma Reentrega desta Nota?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 329
+    Height = 105
+    Align = alTop
+    Color = clMoneyGreen
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 24
+      Top = 16
+      Width = 23
+      Height = 13
+      Caption = 'Nota'
+    end
+    object Bevel1: TBevel
+      Left = 16
+      Top = 32
+      Width = 289
+      Height = 3
+    end
+    object Label2: TLabel
+      Left = 24
+      Top = 48
+      Width = 48
+      Height = 13
+      Caption = 'Romaneio'
+    end
+    object Label3: TLabel
+      Left = 24
+      Top = 72
+      Width = 52
+      Height = 13
+      Caption = 'Tipo/Baixa'
+    end
+    object lbNota: TLabel
+      Left = 112
+      Top = 16
+      Width = 38
+      Height = 13
+      Caption = 'lbNota'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lbRoma: TLabel
+      Left = 112
+      Top = 48
+      Width = 36
+      Height = 13
+      Caption = 'lbRoma'
+    end
+    object lbTipo: TLabel
+      Left = 112
+      Top = 72
+      Width = 193
+      Height = 13
+      AutoSize = False
+      Caption = 'lbTipo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+  object btSim: TBitBtn
+    Left = 24
+    Top = 136
+    Width = 75
+    Height = 25
+    Caption = 'Sim'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+    OnClick = btSimClick
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333333333333330000333333333333333333333333F33333333333
+      00003333344333333333333333388F3333333333000033334224333333333333
+      338338F3333333330000333422224333333333333833338F3333333300003342
+      222224333333333383333338F3333333000034222A22224333333338F338F333
+      8F33333300003222A3A2224333333338F3838F338F33333300003A2A333A2224
+      33333338F83338F338F33333000033A33333A222433333338333338F338F3333
+      0000333333333A222433333333333338F338F33300003333333333A222433333
+      333333338F338F33000033333333333A222433333333333338F338F300003333
+      33333333A222433333333333338F338F00003333333333333A22433333333333
+      3338F38F000033333333333333A223333333333333338F830000333333333333
+      333A333333333333333338330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+  end
+  object btNao: TBitBtn
+    Left = 232
+    Top = 136
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = '&N'#227'o'
+    ModalResult = 7
+    TabOrder = 2
+    OnClick = btNaoClick
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      3333333333333FFFFF333333000033333388888833333333333F888888FFF333
+      000033338811111188333333338833FFF388FF33000033381119999111833333
+      38F338888F338FF30000339119933331111833338F388333383338F300003391
+      13333381111833338F8F3333833F38F3000039118333381119118338F38F3338
+      33F8F38F000039183333811193918338F8F333833F838F8F0000391833381119
+      33918338F8F33833F8338F8F000039183381119333918338F8F3833F83338F8F
+      000039183811193333918338F8F833F83333838F000039118111933339118338
+      F3833F83333833830000339111193333391833338F33F8333FF838F300003391
+      11833338111833338F338FFFF883F83300003339111888811183333338FF3888
+      83FF83330000333399111111993333333388FFFFFF8833330000333333999999
+      3333333333338888883333330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+  end
+end

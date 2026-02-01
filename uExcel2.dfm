@@ -1,0 +1,372 @@
+object Excel2: TExcel2
+  Left = 229
+  Top = 180
+  BorderIcons = [biSystemMenu]
+  Caption = 'Exporta Relat'#243'rio para o Excel'
+  ClientHeight = 442
+  ClientWidth = 690
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 690
+    Height = 73
+    Align = alTop
+    Color = 14803642
+    TabOrder = 0
+    object Label3: TLabel
+      Left = 24
+      Top = 22
+      Width = 32
+      Height = 13
+      Caption = 'Cliente'
+    end
+    object btSel: TSpeedButton
+      Left = 650
+      Top = 18
+      Width = 33
+      Height = 33
+      Hint = 'Selecionar Tudo'
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000000000000000000000000000000000000FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008F52
+        00048D56011B8E5A042F8E5A042F8D57011C8F530005FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008146052B80501F858E65
+        44CA99725BEC9F7864F9A07865F999725BED8F6646CD8152228981470630FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF007D3A031971411DA2885E4BFB9F7669FFAE86
+        7AFFB18A7EFFAF887CFFAF887CFFB18A7EFFB0897DFFA27A6EFF8A6150FD7243
+        21A97D3B041EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF007232083D6A3D26E17F5344FF875F52FF8F695DFF9B75
+        68FFA57F72FFA98376FFA98376FFA68074FF9E786BFF936D60FF8A6356FF8057
+        4AFF693F29E571330844FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00702E083C673926F36E4233FF6A4538FF785245FF845E51FF8E68
+        5BFF967063FF9B7568FF9B7568FF987265FF916B5EFF886255FF7C5649FF6F49
+        3CFF6B4235FF633927F76F2E0843FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF007228061A5F311CDF683C2CFF5F392DFF60392CFF684134FF765043FF815B
+        4EFF855F52FF865F52FF876053FF876154FF835D50FF795346FF6C4437FF623B
+        2EFF603B2EFF643B2DFF5B301EE570280620FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF005C26109F603322FF573124FF643F33FF7A5A4FFF7D5D51FF704B3EFF6F48
+        3BFF7F5B4FFF907064FF906F64FF7E594CFF714B3EFF734F42FF7E5E53FF7B5B
+        4FFF643F33FF593326FF5B3324FF592511A9FFFFFF00FFFFFF00FFFFFF00681D
+        082A582A16F9542C1DFF4E2719FF7F6257FFF1F0ECFFF3F2EFFF9E877EFF562C
+        1EFF9A8278FFF3F2EEFFF0EEEBFF8A6E63FF582F21FFA59087FFF3F3EFFFEFEC
+        E9FF7A5C51FF512A1CFF522C1FFF522918FD671E0931FFFFFF00FFFFFF00581B
+        0C81522614FF4B2519FF4A2315FF7C5F55FFF5F3F0FFF5F4F1FFC2B4AEFF5228
+        1AFF987F75FFF6F5F2FFF4F2EFFF886B61FF552C1EFFC8BCB6FFF5F3F1FFF2F0
+        EDFF785A4FFF4C2517FF4C271AFF4C2516FF551B0C8BFFFFFF006A1409014F1A
+        0BC5491F0FFF462114FF451D10FF795C51FFF5F4F1FFF1F0ECFFDED7D3FF5730
+        23FF937B71FFF6F6F3FFF4F4F0FF84685DFF5D372AFFE2DDD9FFF1F0ECFFF2F1
+        EDFF73554AFF472012FF492316FF461F11FF491A0CCE6A15090563100A194818
+        07E940180AFF411B0EFF3E170AFF75584EFFF7F6F3FFF1EEEBFFF3F1EFFF7151
+        46FF8F756CFFF9F8F5FFF7F5F3FF83665BFF7B5D51FFF5F4F1FFF1EEEBFFF4F2
+        EFFF715348FF421B0EFF431D10FF3E170AFF401507EE62110A1F5D0D0A274112
+        02F4381103FF3F190CFF431C0EFF7C5F55FFF8F7F5FFF1EFECFFF9FAF7FF9F7F
+        73FF967B72FFF9F9F6FFF7F7F4FF8C6F65FFA08074FFF9FAF7FFF1EFEDFFF5F4
+        F1FF7D5F55FF522B1DFF502A1DFF462013FF3F1709F95B0D092E59080A274318
+        09F44D2618FF573124FF573022FF876B60FFF9F9F6FFF3F1EEFFFBFBF9FFA080
+        75FF987E75FFFBFBF8FFF9F9F7FF98796EFFA08075FFFBFBF9FFF3F2EFFFF7F6
+        F3FF83655AFF5B3326FF5D372AFF5A3427FF4C2417F95708092E590209184E21
+        14E85D3627FF5C3629FF5A3225FF886B61FFFBFBFAFFF5F3F1FFFDFDFCFFA080
+        74FF9A8076FFFDFDFBFFFCFBFAFF9A7B70FFA18378FFFDFDFCFFF5F3F1FFF9F8
+        F6FF84665CFF5E3629FF5F392CFF5D372AFF4B2317EE5803091F5C000A01501C
+        15C46A4333FF674134FF694235FF785549FFECE9E6FFF8F8F6FFFDFFFDFFA183
+        78FF997D73FFFCFDFBFFFBFCFAFF99796EFFA3857AFFFDFFFDFFF9F9F7FFE8E4
+        E1FF775346FF6C4639FF6A4437FF6B4537FF4D1F18CD5B000A05FFFFFF005010
+        11817B5644FF7A5447FF7C5649FF774F41FFCCBDB8FFFDFEFEFFFEFFFEFFA486
+        7AFF9B7C71FFFCFCFBFFF8F8F7FF9B796DFFA6877CFFFDFFFEFFFEFFFFFFC7B7
+        B1FF795143FF7E584BFF7C5649FF7A5748FF4F13148BFFFFFF00FFFFFF005300
+        09297A5244F8926C5EFF8E685BFF8A6355FFAD9187FFFDFEFDFFFFFFFFFFA181
+        75FFA07F73FFFBFAF9FFF6F4F3FF9E7B6FFFA88A7FFFFFFFFFFFFCFCFBFFAA8C
+        82FF8D6558FF906A5DFF936D60FF7A5649FC52000931FFFFFF00FFFFFF00FFFF
+        FF005A22219FA4806FFFA17B6EFFA07A6CFFA47F72FFF2EFECFFFFFFFFFFA282
+        76FFA98578FFFBFCFBFFF6F4F3FFA17E71FFA5867AFFFFFFFFFFF0EBE8FFA47E
+        71FFA27C6EFFA37C70FFA58273FF5B2826A7FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00530006197A5148DEBC9787FFB28C7FFFB18A7DFFC2A398FFCAB0A7FFAE8D
+        81FFB48E81FFC9AEA4FFC7ABA1FFB38D7FFFAF8D82FFCBB0A7FFC2A297FFB28B
+        7EFFB38D80FFBC9789FF7C564EE35200061FFFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF0051030A3B916D62F2CDA899FFC39D90FFC0988BFFBF9789FFC29B
+        8EFFC49E91FFC0998BFFC09A8CFFC49E91FFC29B8EFFC0978AFFC19A8CFFC49E
+        91FFCDA99AFF957268F651050B42FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF0051040A3C8D655EE1D5B3A3FFD8B2A5FFD2AB9EFFD1AB
+        9EFFD2AC9FFFD2AC9FFFD2AC9FFFD2AC9FFFD2AC9FFFD2AC9FFFD9B3A5FFD6B4
+        A6FF916A63E651060C43FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF005200041A6A3434A2B79589FBDFBEAFFFE9C5
+        B6FFE8C2B4FFE6C0B2FFE6C0B2FFE8C2B4FFE9C5B7FFE1BFB0FFBA988CFC6D38
+        38A75100041DFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0053020A2C672A2D838E62
+        5DC9AE887FEBBD9A8FF9BD9A8FF8AF8A81EC90645FCB682C2F8653030A2FFFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF005400
+        02015100041353000825530008255100041454000202FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00}
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btSelClick
+    end
+    object BitBtn1: TBitBtn
+      Left = 348
+      Top = 18
+      Width = 25
+      Height = 25
+      Glyph.Data = {
+        66010000424D6601000000000000760000002800000014000000140000000100
+        040000000000F000000000000000000000001000000010000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+        3333333300003333333333333333333300003333333330033003300300003333
+        3333300330033003000033303333333333333333000033000333333333333333
+        000030F000333333333333330000330F000333333333333300003330F0000000
+        73333333000033330F0078887033333300003333300788FF8703333300003333
+        30788888F877333300003333308888888F80333300003333307888888F803333
+        000033333078FF8888803333000033333777FF88887733330000333333077888
+        8703333300003333333077777033333300003333333370007333333300003333
+        33333333333333330000}
+      TabOrder = 0
+      OnClick = BitBtn1Click
+    end
+    object btCalc: TBitBtn
+      Left = 408
+      Top = 17
+      Width = 113
+      Height = 25
+      Caption = 'Exporta Excel Normal'
+      TabOrder = 1
+      OnClick = btCalcClick
+    end
+    object pb: TProgressBar
+      Left = 408
+      Top = 48
+      Width = 232
+      Height = 17
+      TabOrder = 2
+      Visible = False
+    end
+    object cbCli: TComboBox
+      Left = 88
+      Top = 20
+      Width = 177
+      Height = 21
+      Sorted = True
+      TabOrder = 3
+      Text = '<Clientes>'
+    end
+    object vAno: TJvSpinEdit
+      Left = 280
+      Top = 20
+      Width = 57
+      Height = 21
+      DisplayFormat = '#,###'
+      Decimal = 0
+      TabOrder = 4
+    end
+    object btExpCli: TBitBtn
+      Left = 527
+      Top = 17
+      Width = 113
+      Height = 25
+      Caption = 'Exporta Excel Cliente'
+      TabOrder = 5
+      OnClick = btExpCliClick
+    end
+  end
+  object JvDBGrid2: TJvDBGrid
+    Left = 0
+    Top = 73
+    Width = 690
+    Height = 96
+    Align = alTop
+    DataSource = DataSource2
+    FixedColor = 15780262
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    OnCellClick = JvDBGrid2CellClick
+    AlternateRowColor = 15199727
+    SelectColumnsDialogStrings.Caption = 'Select columns'
+    SelectColumnsDialogStrings.OK = '&OK'
+    SelectColumnsDialogStrings.NoSelectionWarning = 'At least one column must be visible!'
+    EditControls = <>
+    RowsHeight = 17
+    TitleRowHeight = 17
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'DESCR'
+        Title.Caption = 'Descri'#231#227'o da Cobran'#231'a'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VCALC'
+        Title.Caption = 'Valor'
+        Width = 71
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DATAPREV'
+        Title.Caption = 'Data Prevista'
+        Width = 111
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Title.Caption = 'Cliente'
+        Width = 160
+        Visible = True
+      end>
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 401
+    Width = 690
+    Height = 41
+    Align = alBottom
+    Color = clMoneyGreen
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 24
+      Top = 13
+      Width = 72
+      Height = 13
+      Caption = 'Procura Nota F'
+      Visible = False
+    end
+    object lbNotas: TLabel
+      Left = 560
+      Top = 16
+      Width = 5
+      Height = 13
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object edRoma: TEdit
+      Left = 128
+      Top = 10
+      Width = 89
+      Height = 21
+      TabOrder = 0
+      Visible = False
+    end
+    object btZero: TBitBtn
+      Left = 408
+      Top = 9
+      Width = 113
+      Height = 25
+      Caption = 'Mostrar Zeros'
+      TabOrder = 1
+    end
+  end
+  object JvDBGrid1: TJvDBGrid
+    Left = 0
+    Top = 169
+    Width = 690
+    Height = 232
+    Align = alClient
+    Color = clWhite
+    DataSource = DataSource1
+    FixedColor = 14742514
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgMultiSelect, dgTitleClick, dgTitleHotTrack]
+    TabOrder = 3
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    MultiSelect = True
+    AlternateRowColor = 16381416
+    SortedField = 'NUMNF'
+    SelectColumnsDialogStrings.Caption = 'Select columns'
+    SelectColumnsDialogStrings.OK = '&OK'
+    SelectColumnsDialogStrings.NoSelectionWarning = 'At least one column must be visible!'
+    CanDelete = False
+    EditControls = <>
+    RowsHeight = 17
+    TitleRowHeight = 17
+    OnAfterPaint = JvDBGrid1AfterPaint
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'DTENT'
+        Title.Caption = 'Data Ent'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'HORA'
+        Title.Caption = 'Hora'
+        Width = 53
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Title.Caption = 'Motorista'
+        Width = 163
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NUMNF'
+        Title.Caption = 'Nota F'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VALOR'
+        Title.Caption = 'Valor'
+        Width = 67
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VOLUME'
+        Title.Caption = 'Volume'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'PESO'
+        Title.Caption = 'Peso'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VFRETE'
+        Title.Caption = 'Valor Frete'
+        Width = 83
+        Visible = True
+      end>
+  end
+  object DataSource2: TDataSource
+    DataSet = DM3.cdsCred
+    Left = 520
+    Top = 88
+  end
+  object DataSource1: TDataSource
+    DataSet = DM1.cdsRomaR
+    Left = 520
+    Top = 240
+  end
+end

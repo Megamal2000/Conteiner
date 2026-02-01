@@ -1,0 +1,318 @@
+object Rel3: TRel3
+  Left = 247
+  Top = 215
+  BorderIcons = [biSystemMenu]
+  Caption = 'Relat'#243'rio de Cobran'#231'a'
+  ClientHeight = 357
+  ClientWidth = 830
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 830
+    Height = 89
+    Align = alTop
+    Color = 15592408
+    TabOrder = 0
+    ExplicitWidth = 838
+    object Label1: TLabel
+      Left = 32
+      Top = 8
+      Width = 42
+      Height = 13
+      Caption = 'Relat'#243'rio'
+    end
+    object lbRel: TLabel
+      Left = 88
+      Top = 8
+      Width = 30
+      Height = 13
+      Caption = 'lbRel'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object btAtualiza: TBitBtn
+      Left = 32
+      Top = 56
+      Width = 97
+      Height = 25
+      Caption = 'Atualiza'
+      TabOrder = 0
+      OnClick = btAtualizaClick
+    end
+    object GroupBox1: TGroupBox
+      Left = 288
+      Top = 8
+      Width = 425
+      Height = 73
+      Caption = 'Resumo'
+      TabOrder = 1
+      object Label2: TLabel
+        Left = 8
+        Top = 24
+        Width = 60
+        Height = 13
+        Caption = 'Quant Notas'
+      end
+      object Label3: TLabel
+        Left = 8
+        Top = 48
+        Width = 55
+        Height = 13
+        Caption = 'Total Notas'
+      end
+      object Label4: TLabel
+        Left = 152
+        Top = 24
+        Width = 51
+        Height = 13
+        Caption = 'Total Peso'
+      end
+      object Label5: TLabel
+        Left = 152
+        Top = 48
+        Width = 55
+        Height = 13
+        Caption = 'Total Ponto'
+      end
+      object Label6: TLabel
+        Left = 280
+        Top = 24
+        Width = 51
+        Height = 13
+        Caption = 'Total Frete'
+      end
+      object lb1: TLabel
+        Left = 80
+        Top = 24
+        Width = 18
+        Height = 13
+        Caption = 'lb1'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lb2: TLabel
+        Left = 80
+        Top = 48
+        Width = 18
+        Height = 13
+        Caption = 'lb2'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lb3: TLabel
+        Left = 216
+        Top = 24
+        Width = 18
+        Height = 13
+        Caption = 'lb3'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lb4: TLabel
+        Left = 216
+        Top = 48
+        Width = 18
+        Height = 13
+        Caption = 'lb4'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lb5: TLabel
+        Left = 344
+        Top = 24
+        Width = 18
+        Height = 13
+        Caption = 'lb5'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+  end
+  object JvDBGrid1: TJvDBGrid
+    Left = 0
+    Top = 89
+    Width = 830
+    Height = 268
+    Align = alClient
+    DataSource = DataSource1
+    FixedColor = 14142873
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    PopupMenu = PopupMenu1
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    OnDblClick = JvDBGrid1DblClick
+    AlternateRowColor = 14737632
+    SelectColumnsDialogStrings.Caption = 'Select columns'
+    SelectColumnsDialogStrings.OK = '&OK'
+    SelectColumnsDialogStrings.NoSelectionWarning = 'At least one column must be visible!'
+    EditControls = <>
+    RowsHeight = 17
+    TitleRowHeight = 17
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'NUMNF'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        Title.Caption = 'Nota F'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'LOCAL'
+        Title.Caption = 'Local'
+        Width = 33
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'LOCALI'
+        Title.Caption = 'Localidade'
+        Width = 149
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VALOR'
+        Title.Caption = 'Valor'
+        Width = 68
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VOLUME'
+        Title.Caption = 'Volume'
+        Width = 41
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'PESO'
+        Title.Caption = 'Peso'
+        Width = 42
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'PONTO'
+        Title.Caption = 'pt pt'
+        Width = 35
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'SERVICO2'
+        Title.Caption = 'Servi'#231'o Cob'
+        Width = 75
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VFRETE'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        Title.Caption = 'Frete Total'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clBlack
+        Title.Font.Height = -11
+        Title.Font.Name = 'MS Sans Serif'
+        Title.Font.Style = []
+        Width = 67
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCR'
+        Title.Caption = 'Observa'#231#227'o'
+        Width = 192
+        Visible = True
+      end>
+  end
+  object DataSource1: TDataSource
+    DataSet = DM3.cdsRelN
+    Left = 648
+    Top = 128
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 608
+    Top = 128
+    object CalculaUM1: TMenuItem
+      Caption = 'Calcula UM'
+      OnClick = CalculaUM1Click
+    end
+    object CalculaTODOS1: TMenuItem
+      Caption = 'Calcula TODOS'
+      OnClick = CalculaTODOS1Click
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object AlteraValor1: TMenuItem
+      Caption = 'Altera Valor'
+      OnClick = AlteraValor1Click
+    end
+    object AlteraPonto1: TMenuItem
+      Caption = 'Altera Ponto'
+      OnClick = AlteraPonto1Click
+    end
+    object AlteraServioCob1: TMenuItem
+      Caption = 'Altera Servi'#231'o Cob'
+      OnClick = AlteraServioCob1Click
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object RetiraNOTA1: TMenuItem
+      Caption = 'Retira NOTA'
+      OnClick = RetiraNOTA1Click
+    end
+    object Romaneio1: TMenuItem
+      Caption = 'Romaneio'
+      OnClick = Romaneio1Click
+    end
+  end
+end
